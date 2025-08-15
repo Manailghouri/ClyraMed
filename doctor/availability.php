@@ -51,16 +51,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <link rel="stylesheet" href="form.css">
 </head>
 <body>
-  <header class="header">
+    <!-- Header -->
+  <header class="header" role="banner">
     <div class="container header-inner">
-              <a href="doctor-dashboard.php" class="logo">Care</a>
-      <nav class="nav" id="main-nav">
-        <a href="doctor-dashboard.php">Dashboard</a>
+      <a href="#" class="logo" aria-label="ClyraMed Home">
+        Clyra<span>Med</span>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Primary">
+        <a href="doctor-dashboard.php" class="active">Dashboard</a>
         <a href="editdoctor.php">Profile</a>
-        <a href="availability.php" class="active">Availability</a>
+        <a href="availability.php">Availability</a>
         <a href="appointments.php">Appointments</a>
       </nav>
-      <a href="../logout.php" class="link-btn">Logout</a>
+
+      <div class="header-actions">
+        <button id="menu-btn" class="menu-btn" aria-label="Toggle menu" aria-controls="main-nav" aria-expanded="false">
+          <i class="bi bi-list"></i>
+        </button>
+        <a href="../logout.php" class="link-btn">Logout</a>
+      </div>
     </div>
   </header>
 

@@ -135,8 +135,8 @@
                                     </span>
                                 </td>
                                 <td>
-                                    <a href="editPatient.php?id=<?php echo $patientId; ?>" style="color: #00b8b8; margin-right: 10px; text-decoration: none;" title="Edit Patient">
-                                        <i class="ri-edit-line edit"></i>
+                                    <a href="editPatient.php?id=<?php echo $patientId; ?>"  style="background: none; border: none; color: green; cursor: pointer;" title="Edit Patient"><i class="ri-edit-line edit"></i>
+        
                                     </a>
                                     
                                     <a href="bookAppointment.php?patient=<?php echo $patientId; ?>" style="color: #28a745; margin-right: 10px; text-decoration: none;" title="Book Appointment for this Patient">

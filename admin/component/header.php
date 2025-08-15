@@ -11,7 +11,7 @@
     <section class="header">
         <div class="logo">
             <i class="ri-menu-line icon icon-0 menu"></i>
-            <h2>Care</h2>
+            <h2>Clyra<span>Med</span></h2>
         </div>
 
         <div class="search--notification--profile">

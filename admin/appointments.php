@@ -88,93 +88,9 @@ foreach ($appointments as $appt) {
     <!-- Remix Icon CDN -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- Main CSS for dashboard -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
     
-    <style>
-        .status-badge {
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: 500;
-        }
-        .status-badge.pending {
-            background-color: #fff3cd;
-            color: #856404;
-        }
-        .status-badge.confirmed {
-            background-color: #d1ecf1;
-            color: #0c5460;
-        }
-        .status-badge.completed {
-            background-color: #d4edda;
-            color: #155724;
-        }
-        .status-badge.cancelled {
-            background-color: #f8d7da;
-            color: #721c24;
-        }
-        .btn-group .btn {
-            margin-right: 5px;
-        }
-        .stats-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-        @media (max-width: 768px) {
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        .btn-sm {
-            padding: 0.25rem 0.5rem;
-            font-size: 0.875rem;
-            line-height: 1.5;
-            border-radius: 0.2rem;
-            border: none;
-            cursor: pointer;
-        }
-        .btn-primary {
-            background-color: #007bff;
-            color: white;
-        }
-        .btn-danger {
-            background-color: #dc3545;
-            color: white;
-        }
-        .form-control-sm {
-            padding: 0.25rem 0.5rem;
-            font-size: 0.875rem;
-            line-height: 1.5;
-            border-radius: 0.2rem;
-            border: 1px solid #ced4da;
-        }
-        .alert {
-            padding: 0.75rem 1.25rem;
-            margin-bottom: 1rem;
-            border: 1px solid transparent;
-            border-radius: 0.25rem;
-        }
-        .alert-success {
-            color: #155724;
-            background-color: #d4edda;
-            border-color: #c3e6cb;
-        }
-        .alert-danger {
-            color: #721c24;
-            background-color: #f8d7da;
-            border-color: #f5c6cb;
-        }
-    </style>
+    
 </head>
 <body>
     <!-- ================= HEADER SECTION ================= -->
@@ -295,12 +211,15 @@ foreach ($appointments as $appt) {
                                                         <option value="Completed" <?php echo ($status === 'Completed') ? 'selected' : ''; ?>>Completed</option>
                                                         <option value="Cancelled" <?php echo ($status === 'Cancelled') ? 'selected' : ''; ?>>Cancelled</option>
                                                     </select>
-                                                    <button type="submit" name="update_status" class="btn-sm btn-primary">Update</button>
+                                                    <button type="submit" name="update_status" style="background: none; border: none; color: green; cursor: pointer;" ><i class="ri-edit-line edit" title="Edit"></i>
+</button>
                                                 </form>
                                                 
                                                 <form method="POST" style="display: inline;" onsubmit="return confirm('Are you sure you want to delete this appointment?');">
                                                     <input type="hidden" name="appointment_id" value="<?php echo $appt['id']; ?>">
-                                                    <button type="submit" name="delete_appointment" class="btn-sm btn-danger">Delete</button>
+<button type="submit" name="delete_appointment" style="background: none; border: none; color: red; cursor: pointer;">
+    <i class="ri-delete-bin-line delete"></i>
+</button>
                                                 </form>
                                             </div>
                                         </td>

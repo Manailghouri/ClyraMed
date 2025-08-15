@@ -88,24 +88,27 @@ foreach ($appointments as $appt) {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" />
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
+     <!-- Header -->
   <header class="header" role="banner">
     <div class="container header-inner">
-      <a href="doctor-dashboard.php" class="logo" aria-label="ClyraMed Home">
-        Care
+      <a href="#" class="logo" aria-label="ClyraMed Home">
+        Clyra<span>Med</span>
       </a>
 
       <nav class="nav" id="main-nav" aria-label="Primary">
-        <a href="doctor-dashboard.php">Dashboard</a>
+        <a href="doctor-dashboard.php" class="active">Dashboard</a>
         <a href="editdoctor.php">Profile</a>
         <a href="availability.php">Availability</a>
-        <a href="appointments.php" class="active">Appointments</a>
+        <a href="appointments.php">Appointments</a>
       </nav>
 
       <div class="header-actions">
+        <button id="menu-btn" class="menu-btn" aria-label="Toggle menu" aria-controls="main-nav" aria-expanded="false">
+          <i class="bi bi-list"></i>
+        </button>
         <a href="../logout.php" class="link-btn">Logout</a>
       </div>
     </div>

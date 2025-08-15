@@ -61,19 +61,29 @@ $doctor = $result->fetch_assoc();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edit Profile - Doctor</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
+  <!-- Header -->
+  <header class="header" role="banner">
     <div class="container header-inner">
-              <a href="doctor-dashboard.php" class="logo">Care</a>
-      <nav class="nav" id="main-nav">
-        <a href="doctor-dashboard.php">Dashboard</a>
-        <a href="editdoctor.php" class="active">Profile</a>
+      <a href="#" class="logo" aria-label="ClyraMed Home">
+        Clyra<span>Med</span>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Primary">
+        <a href="doctor-dashboard.php" class="active">Dashboard</a>
+        <a href="editdoctor.php">Profile</a>
         <a href="availability.php">Availability</a>
         <a href="appointments.php">Appointments</a>
       </nav>
-      <a href="../logout.php" class="link-btn">Logout</a>
+
+      <div class="header-actions">
+        <button id="menu-btn" class="menu-btn" aria-label="Toggle menu" aria-controls="main-nav" aria-expanded="false">
+          <i class="bi bi-list"></i>
+        </button>
+        <a href="../logout.php" class="link-btn">Logout</a>
+      </div>
     </div>
   </header>
 

@@ -88,7 +88,7 @@ if ($apptResult && $apptResult->num_rows > 0) {
   <header class="header" role="banner">
     <div class="container header-inner">
       <a href="#" class="logo" aria-label="ClyraMed Home">
-        Care
+        Clyra<span>Med</span>
       </a>
 
       <nav class="nav" id="main-nav" aria-label="Primary">

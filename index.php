@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
 
     <!---------Custom css link------>
-    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 
@@ -261,11 +261,18 @@ if (isset($_POST['submit'])) {
 <!-- ===== Doctors section ===== -->
     <section class="contact" id="contact">
 <div class="doctors">
-    <div class="title">
- <h2 class="section--title">Doctors Available</h2>        <div class="doctors--right--btns">
-           
-        </div>
+   <div class="title">
+    <h2 class="section--title">Doctors Available</h2>        
+    <div class="doctors--right--btns">
+        <select name="availability_filter" id="availability_filter" 
+            class="dropdown doctor--filter" onchange="filterDoctors(this.value)">
+            <option value="">Filter</option>
+            <option value="Free">Free</option>
+            <option value="Scheduled">Scheduled</option>
+        </select>
     </div>
+</div>
+
     <div class="doctors--cards" id="doctorCards">
         <?php while ($doctor = mysqli_fetch_assoc($viewDoctorResult)) { ?>
     <div class="doctor--card" data-status="<?= htmlspecialchars($doctor['doctorAvailability']) ?>">

@@ -89,7 +89,7 @@ if (isset($_POST['login'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
 
     <!---------Custom css link------>
-    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 
@@ -257,9 +257,7 @@ if (isset($_POST['login'])) {
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-5 ">
                     <h2 class="heading ">Welcome to Care</h2>
-                    <p style="text-align: center; color: #666; ; font-size: 1.1rem;">
-                        Login for Patients, Doctors & Administrators
-                    </p>
+                
                     <?php if ($error) echo "<div class='error-message'>$error</div>"; ?>
                     
                     <form method="post">

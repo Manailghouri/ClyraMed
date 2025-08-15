@@ -618,6 +618,7 @@ tbody tr td[colspan='6'] {
     color: var(--light-color);
 }
 
+
 /* ===================== DOCTOR FORM ===================== */
 .doctor-form-wrapper {
   display: flex;
@@ -730,143 +731,245 @@ td i.delete:hover {
   transform: scale(1.2);
   background-color: #fde9ea;
 }
+
+/* ===== FORM CONTAINER ===== */
 .form-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ===== FORM ROWS ===== */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #fafafa;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #00b8b8;
+    box-shadow: 0 0 0 3px rgba(0, 184, 184, 0.15);
+    background: white;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    background-color: #00b8b8;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #008a8a;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    margin-right: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+/* ===== ALERTS ===== */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.back-btn:hover {
+    color: #00b8b8;
+}
+
+/* ===== PATIENT INFO BOX ===== */
+.patient-info {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+/* ===== STATS CARDS ===== */
+.stats-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.stats-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.stats-card h3 {
+    margin: 0;
+    color: #00b8b8;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.stats-card p {
+    margin: 0.5rem 0 0 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+        .status-badge {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .status-badge.pending {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        .status-badge.confirmed {
+            background-color: #d1ecf1;
+            color: #0c5460;
+        }
+        .status-badge.completed {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .status-badge.cancelled {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .btn-group .btn {
+            margin-right: 5px;
+        }
+        .stats-card {
             background: white;
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            max-width: 700px;
-            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 2rem;
         }
-        
-        .form-row {
+        .stats-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
         }
-        
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: #333;
-        }
-        
-        .form-group input, .form-group select {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 14px;
-            transition: border-color 0.3s ease;
-        }
-        
-        .form-group input:focus, .form-group select:focus {
-            outline: none;
-            border-color: #00b8b8;
-            box-shadow: 0 0 0 2px rgba(0, 184, 184, 0.1);
-        }
-        
-        .btn {
-            background-color: #00b8b8;
-            color: white;
-            padding: 12px 24px;
+        .btn-sm {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            border-radius: 0.2rem;
             border: none;
-            border-radius: 4px;
             cursor: pointer;
-            font-size: 16px;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
         }
-        
-        .btn:hover {
-            background-color: #008a8a;
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
         }
-        
-        .btn-secondary {
-            background-color: #6c757d;
-            margin-right: 10px;
+        .btn-danger {
+            background-color: #dc3545;
+            color: white;
         }
-        
-        .btn-secondary:hover {
-            background-color: #545b62;
+        .form-control-sm {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            border-radius: 0.2rem;
+            border: 1px solid #ced4da;
         }
-        
         .alert {
-            padding: 15px;
-            margin-bottom: 20px;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1rem;
             border: 1px solid transparent;
-            border-radius: 4px;
+            border-radius: 0.25rem;
         }
-        
         .alert-success {
             color: #155724;
             background-color: #d4edda;
             border-color: #c3e6cb;
         }
-        
         .alert-danger {
             color: #721c24;
             background-color: #f8d7da;
             border-color: #f5c6cb;
         }
-        
-        .page-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 2rem;
-        }
-        
-        .back-btn {
-            text-decoration: none;
-            color: #6c757d;
-            font-size: 14px;
-        }
-        
-        .back-btn:hover {
-            color: #00b8b8;
-        }
-        
-        .patient-info {
-            background: #e3f2fd;
-            padding: 15px;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            display: none;
-        }
-        
-        .stats-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-        
-        .stats-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        
-        .stats-card h3 {
-            margin: 0;
-            color: #00b8b8;
-            font-size: 2rem;
-        }
-        
-        .stats-card p {
-            margin: 0.5rem 0 0 0;
-            color: #666;
-        }
 
+        
 
 /* ===================== RESPONSIVE DESIGN ===================== */
 @media screen and (max-width: 1350px) {
@@ -904,6 +1007,9 @@ td i.delete:hover {
      form.form.wide-form {
     padding: 2rem;
   }
+    .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
 
   .form-grid {
     grid-template-columns: 1fr;
@@ -913,6 +1019,14 @@ td i.delete:hover {
     font-size: 26px;
   }
 }
+    .stats-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .stats-card {
+        flex: 1 1 100%;
+    }
+
   
 }
 

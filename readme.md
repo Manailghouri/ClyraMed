@@ -75,7 +75,6 @@ It allows **patients** to easily book appointments, while **admins** and **docto
 
    * If using **XAMPP/WAMP/MAMP**, place the project folder in the `htdocs/` directory.
    * Or run PHP built-in server:
-
      php -S localhost:8000
 
 3.Run the application
@@ -83,6 +82,8 @@ It allows **patients** to easily book appointments, while **admins** and **docto
 
    ```
    http://localhost:8000
+
+   ````
 
 🛠 Technologies Used
 

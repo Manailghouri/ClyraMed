@@ -81,7 +81,7 @@ if ($apptResult && $apptResult->num_rows > 0) {
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <!-- Your styling -->
-  <link rel="stylesheet" href="form.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Header -->

@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Doctor Availability</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->

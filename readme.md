@@ -1,56 +1,57 @@
-ClyraMed – Clarity in Care
 
-ClyraMed is a doctor appointment management platform designed to make healthcare access simple, transparent, and efficient. It allows patients to easily book appointments, while admins and doctors can manage users, schedules, and consultations through a clean and user-friendly interface.
+# 🌐 ClyraMed – Clarity in Care  
 
-## 🖼 Screenshots
+**ClyraMed** is a doctor appointment management platform designed to make healthcare access simple, transparent, and efficient.  
+It allows **patients** to easily book appointments, while **admins** and **doctors** can manage users, schedules, and consultations through a clean and user-friendly interface.  
 
-### Homepage
-![Homepage](assets/1.png)
+---
 
-### Login Page
-![Login](assets/2.png)
+## 🖼 Screenshots  
 
-### Admin Booking
-![Appointment](assets/3.png)
+### 🏠 Homepage  
+![Homepage](assets/1.png)  
 
-### Doctor Profile
-![Admin](assets/4.png)
+### 🔐 Login Page  
+![Login](assets/2.png)  
 
+### 📅 Admin Dashboard  
+![Admin Dashboard](assets/3.png)  
 
-✨ Features
-👩‍⚕️ Patients
+### 👨‍⚕️ Doctor Profile  
+![Doctor Profile](assets/4.png)  
 
-Register and log in securely
+---
 
-Browse doctors and specialties
+## ✨ Features  
 
-Book, view, and cancel appointments
+### 👩‍⚕️ Patients  
+- Register and log in securely  
+- Browse doctors and specialties  
+- Book, view, and cancel appointments  
+- Simple dashboard for tracking visits  
 
-Simple dashboard for tracking visits
+### 🏥 Doctors  
+- Manage their profiles and availability  
+- View assigned patient appointments  
+- Update consultation details  
 
-🏥 Doctors
+### 👨‍💼 Admins  
+- Create and manage doctor accounts  
+- Oversee appointments and patient records  
+- Handle system-wide settings  
 
-Manage their profiles and availability
+---
 
-View assigned patient appointments
+## 📂 Project Structure  
 
-Update consultation details
+```
 
-👨‍💼 Admins
-
-Create and manage doctor accounts
-
-Oversee appointments and patient records
-
-Handle system-wide settings
-
-📂 Project Structure
 /
 ├── assets/             # Images, CSS, and static files
 ├── doctor/             # Doctor-related interface/pages
 ├── appointment.php     # Appointment booking logic
 ├── code.php            # Core configuration / database connection
-├── create_admin.php    # Admin account creation
+├── create\_admin.php    # Admin account creation
 ├── doctorProfile.php   # Doctor profile management
 ├── header.php          # Common navigation/header
 ├── index.php           # Homepage
@@ -58,30 +59,53 @@ Handle system-wide settings
 ├── logout.php          # Logout functionality
 └── signup.php          # New user registration
 
-⚙️ Installation & Setup
+````
 
-Clone the repository
-git clone https://github.com/abdulkarim78/Care.git
-cd Care
+---
 
-Run the application
-Open your browser and go to:
-http://localhost:8000
+## ⚙️ Installation & Setup  
 
-🛠 Technologies Used
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/Manailghouri/ClyraMed.git
+   cd ClyraMed
+````
 
-PHP – Server-side scripting
+2. **Set up local server**
 
-MySQL – Database management
+   * If using **XAMPP/WAMP/MAMP**, place the project folder in the `htdocs/` directory.
+   * Or run PHP built-in server:
 
-HTML5, CSS3, JavaScript – Frontend styling & interactions
+     ```bash
+     php -S localhost:8000
+     ```
 
-🚀 Future Enhancements
+3. **Run the application**
+   Open your browser and visit:
 
-Email/SMS notifications for appointments
+   ```
+   http://localhost:8000
+   ```
 
-Role-based access with finer permissions
+---
 
-Advanced search and filtering of doctors
+## 🛠 Technologies Used
 
-Calendar view for appointments
+* **PHP** – Server-side scripting
+* **MySQL** – Database management
+* **HTML5, CSS3, JavaScript** – Frontend styling & interactions
+
+---
+
+## 🚀 Future Enhancements
+
+* 📩 Email/SMS notifications for appointments
+* 🔐 Role-based access with finer permissions
+* 🔎 Advanced search & filtering of doctors
+* 📆 Calendar view for appointments
+
+---
+
+## 👨‍💻 Author
+
+* **Manail Ghouri** – [GitHub Profile](https://github.com/Manailghouri)

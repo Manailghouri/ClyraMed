@@ -65,47 +65,43 @@ It allows **patients** to easily book appointments, while **admins** and **docto
 
 ## ⚙️ Installation & Setup  
 
-1. **Clone the repository**  
+1.Clone the repository
    ```bash
    git clone https://github.com/Manailghouri/ClyraMed.git
    cd ClyraMed
 ````
 
-2. **Set up local server**
+2. Set up local server
 
    * If using **XAMPP/WAMP/MAMP**, place the project folder in the `htdocs/` directory.
    * Or run PHP built-in server:
 
-     ```bash
      php -S localhost:8000
-     ```
 
-3. **Run the application**
+3.Run the application
    Open your browser and visit:
 
    ```
    http://localhost:8000
-   ```
 
----
+🛠 Technologies Used
 
-## 🛠 Technologies Used
+PHP – Server-side scripting
 
-* **PHP** – Server-side scripting
-* **MySQL** – Database management
-* **HTML5, CSS3, JavaScript** – Frontend styling & interactions
+MySQL – Database management
 
----
+HTML5, CSS3, JavaScript – Frontend styling & interactions
 
-## 🚀 Future Enhancements
+🚀 Future Enhancements
 
-* 📩 Email/SMS notifications for appointments
-* 🔐 Role-based access with finer permissions
-* 🔎 Advanced search & filtering of doctors
-* 📆 Calendar view for appointments
+📩 Email/SMS notifications for appointments
 
----
+🔐 Role-based access with finer permissions
 
-## 👨‍💻 Author
+🔎 Advanced search & filtering of doctors
 
-* **Manail Ghouri** – [GitHub Profile](https://github.com/Manailghouri)
+📆 Calendar view for appointments
+
+👨‍💻 Author
+
+Manail Ghouri – GitHub Profile
